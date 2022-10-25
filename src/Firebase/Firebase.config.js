@@ -5,15 +5,14 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCsh_wAUP3MGzIbaTWErk7aWogt6n-F-2U",
-  authDomain: "genius-traveller.firebaseapp.com",
-  projectId: "genius-traveller",
-  storageBucket: "genius-traveller.appspot.com",
-  messagingSenderId: "505833330557",
-  appId: "1:505833330557:web:9a25543aff5ac6cb505e14",
+  apiKey: "AIzaSyA_pVA2FssV0tmm3SXk1jQO9_jd0sKh23Q",
+  authDomain: "genius-traveller-2d3f3.firebaseapp.com",
+  projectId: "genius-traveller-2d3f3",
+  storageBucket: "genius-traveller-2d3f3.appspot.com",
+  messagingSenderId: "576631328517",
+  appId: "1:576631328517:web:77a3bac39b1732cd6e716c",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
 export default app;

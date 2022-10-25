@@ -5,7 +5,7 @@ import Home from "./Pages/Home/Home";
 
 function App() {
   return (
-    <div>
+    <div className="home-container App">
       <RouterProvider router={router}></RouterProvider>
     </div>
   );

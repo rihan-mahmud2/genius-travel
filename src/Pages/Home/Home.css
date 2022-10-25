@@ -1,5 +1,8 @@
-/* .home-container {
-  background-image: url("https://media.istockphoto.com/photos/green-garden-picture-id1131805687");
+.home-container {
+  border: 1px solid black;
+  background-image: url("https://images.unsplash.com/photo-1500622944204-b135684e99fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJhbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
-} */
+  min-height: 90vh;
+}

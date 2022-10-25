@@ -1,3 +1,6 @@
+import Book from "../Others/Book";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
+
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Main } = require("../Layout/Main");
 const { default: Home } = require("../Pages/Home/Home");
@@ -12,7 +15,7 @@ export const router = createBrowserRouter([
       {
         path: "/home",
         element: <Home></Home>,
-        loader: () => fetch("http://localhost:5000/place"),
+        loader: () => fetch("https://genius-travel-server.vercel.app/place"),
       },
       {
         path: "/login",
@@ -21,6 +24,16 @@ export const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/hotels/:id",
+        element: (
+          <PrivateRoute>
+            <Book></Book>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(`https://genius-travel-server.vercel.app/hotels/${params.id}`),
       },
     ],
   },
